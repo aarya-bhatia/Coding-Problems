@@ -1,0 +1,289 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BIN_DIR	Dynamic-Programming/Makefile	/^BIN_DIR=bin$/;"	m
+CATCH_CONFIG_MAIN	src/Least-Common-Ancestor.cpp	/^#define CATCH_CONFIG_MAIN$/;"	d	file:
+CATCH_CONFIG_MAIN	src/test_list.cpp	/^#define CATCH_CONFIG_MAIN$/;"	d	file:
+CPP_SRC	Makefile	/^CPP_SRC=$(wildcard src\/*.cpp)$/;"	m
+CPP_TARGETS	Makefile	/^CPP_TARGETS=$(CPP_SRC:src\/%.cpp=bin\/%)$/;"	m
+C_SRC	Makefile	/^C_SRC=$(wildcard src\/*.c)$/;"	m
+C_TARGETS	Makefile	/^C_TARGETS=$(C_SRC:src\/%.c=bin\/%)$/;"	m
+DIRS	Makefile	/^DIRS=$(shell find include src -type d)$/;"	m
+FILES	Dynamic-Programming/Makefile	/^FILES=$(shell ls | grep '\\.cpp')$/;"	m
+Graph	include/graph/Graph.hpp	/^struct Graph$/;"	s
+HeightCmp	src/CircusTower.cpp	/^struct HeightCmp$/;"	s	file:
+INCLUDES	Makefile	/^INCLUDES=$(addprefix -I, $(DIRS))$/;"	m
+INC_FILES	Makefile	/^INC_FILES=$(shell find include -type f -name "*.cpp")$/;"	m
+Iterator	include/bst/Tree.cpp	/^template<class T> Tree<T>::Iterator::Iterator(TreeNode<T> *current): $/;"	f	class:Tree::Iterator
+Iterator	include/bst/Tree.hpp	/^        class Iterator$/;"	c	class:Tree
+Iterator	src/LFUCache.cpp	/^    typedef list<_Node>::iterator Iterator;$/;"	t	class:LFUCache	file:
+LAND	src/MinimumIsland.cpp	/^#define LAND /;"	d	file:
+LCSLength	Dynamic-Programming/LCS.cpp	/^int LCSLength(const std::string &x, const std::string &y, int m, int n)$/;"	f
+LCSLengthOptimized	Dynamic-Programming/LCS.cpp	/^int LCSLengthOptimized(const std::string &x, const std::string &y)$/;"	f
+LCSLengthOptimized	Dynamic-Programming/LCS.cpp	/^int LCSLengthOptimized(const std::string &x, const std::string &y, int m, int n, $/;"	f
+LFUCache	src/LFUCache.cpp	/^LFUCache(int capacity):: _capacity(capacity)$/;"	f
+LFUCache	src/LFUCache.cpp	/^class LFUCache {$/;"	c	file:
+LRUCache	src/LRU_Cache.cpp	/^LRUCache::LRUCache(int capacity) : capacity(capacity)$/;"	f	class:LRUCache
+LRUCache	src/LRU_Cache.cpp	/^class LRUCache$/;"	c	file:
+List	include/linkedlist/List.hpp	/^    List()$/;"	f	struct:List
+List	include/linkedlist/List.hpp	/^struct List$/;"	s
+List	src/MergeKSortedList.cpp	/^    List()$/;"	f	struct:List
+List	src/MergeKSortedList.cpp	/^struct List$/;"	s	file:
+ListNode	include/linkedlist/ListNode.hpp	/^    ListNode(): prev(nullptr), next(nullptr), data(T()) {}$/;"	f	struct:ListNode
+ListNode	include/linkedlist/ListNode.hpp	/^    ListNode(ListNode<T> *prev, ListNode<T> *next, const T& data):$/;"	f	struct:ListNode
+ListNode	include/linkedlist/ListNode.hpp	/^    ListNode(const T &data): prev(nullptr), next(nullptr), data(data) {}$/;"	f	struct:ListNode
+ListNode	include/linkedlist/ListNode.hpp	/^struct ListNode$/;"	s
+ListNode	src/MergeKSortedList.cpp	/^    ListNode() : val(0), next(nullptr) {}$/;"	f	struct:ListNode
+ListNode	src/MergeKSortedList.cpp	/^    ListNode(int x) : val(x), next(nullptr) {}$/;"	f	struct:ListNode
+ListNode	src/MergeKSortedList.cpp	/^    ListNode(int x, ListNode *next) : val(x), next(next) {}$/;"	f	struct:ListNode
+ListNode	src/MergeKSortedList.cpp	/^struct ListNode$/;"	s	file:
+MyHash	Dynamic-Programming/SCS.cpp	/^struct MyHash$/;"	s	file:
+Node	include/graph/Node.hpp	/^    Node(const T &data) : data(data)$/;"	f	struct:Node
+Node	include/graph/Node.hpp	/^struct Node$/;"	s
+OBJ_DIR	Dynamic-Programming/Makefile	/^OBJ_DIR=obj$/;"	m
+Person	src/CircusTower.cpp	/^struct Person$/;"	s	file:
+Range	src/MaxSubMatrix.cpp	/^    Range(int start, int end, int sum): start(start), end(end), sum(sum)$/;"	f	struct:Range
+Range	src/MaxSubMatrix.cpp	/^struct Range$/;"	s	file:
+SCSLength	Dynamic-Programming/SCS.cpp	/^int SCSLength(std::string x, std::string y)$/;"	f
+SCSLength	Dynamic-Programming/SCS.cpp	/^int SCSLength(std::string x, std::string y, int m, int n, $/;"	f
+Solution	src/LongestPalindromeSubstring.cpp	/^class Solution$/;"	c	file:
+Solution	src/MergeKSortedList.cpp	/^class Solution$/;"	c	file:
+SubMatrix	src/MaxSubMatrix.cpp	/^    SubMatrix(int rowStart, int colStart, int rowEnd, int colEnd, int sum):$/;"	f	struct:SubMatrix
+SubMatrix	src/MaxSubMatrix.cpp	/^struct SubMatrix$/;"	s	file:
+TARGETS	Dynamic-Programming/Makefile	/^TARGETS=$(FILES:%.cpp=$(BIN_DIR)\/%)$/;"	m
+Time	src/TimeSchedulingAlgorithm.cpp	/^    Time(const char *timeString)$/;"	f	struct:Time
+Time	src/TimeSchedulingAlgorithm.cpp	/^struct Time {$/;"	s	file:
+TimeRange	src/TimeSchedulingAlgorithm.cpp	/^    TimeRange(Time start, Time end): startTime(start), endTime(end)$/;"	f	struct:TimeRange
+TimeRange	src/TimeSchedulingAlgorithm.cpp	/^struct TimeRange$/;"	s	file:
+Tree	include/bst/Tree.cpp	/^Tree<T>::Tree(TreeNode<T> *root)$/;"	f	class:Tree
+Tree	include/bst/Tree.hpp	/^class Tree {$/;"	c
+TreeNode	include/bst/TreeNode.cpp	/^TreeNode<T>::TreeNode(TreeNode<T> *left, TreeNode<T> *right, const T &data)$/;"	f	class:TreeNode
+TreeNode	include/bst/TreeNode.cpp	/^TreeNode<T>::TreeNode(const T &data): data(data)$/;"	f	class:TreeNode
+TreeNode	include/bst/TreeNode.hpp	/^struct TreeNode{$/;"	s
+URLify	src/URLify.c	/^char *URLify(const char *str)$/;"	f
+WATER	src/MinimumIsland.cpp	/^#define WATER /;"	d	file:
+_Node	src/LFUCache.cpp	/^        _Node(int k=0,int v=0): key(v), value(v) $/;"	f	struct:LFUCache::_Node
+_Node	src/LFUCache.cpp	/^    struct _Node $/;"	s	class:LFUCache	file:
+_Node	src/LRU_Cache.cpp	/^_Node::_Node()$/;"	f	class:_Node
+_Node	src/LRU_Cache.cpp	/^struct _Node$/;"	s	file:
+_capacity	src/LFUCache.cpp	/^    int _capacity, _min_freq, _max_freq;$/;"	m	class:LFUCache	file:
+_current	include/bst/Tree.hpp	/^                TreeNode<T> *_current;$/;"	m	class:Tree::Iterator
+_list	src/LFUCache.cpp	/^    unordered_map<int,list<_Node>> _list;$/;"	m	class:LFUCache	file:
+_map	src/LFUCache.cpp	/^    unordered_map<int,Iterator> _map;$/;"	m	class:LFUCache	file:
+_max_freq	src/LFUCache.cpp	/^    int _capacity, _min_freq, _max_freq;$/;"	m	class:LFUCache	file:
+_min_freq	src/LFUCache.cpp	/^    int _capacity, _min_freq, _max_freq;$/;"	m	class:LFUCache	file:
+_queue	include/bst/Tree.hpp	/^                std::queue<TreeNode<T> *> _queue;$/;"	m	class:Tree::Iterator
+_root	include/bst/Tree.hpp	/^        TreeNode<T> *_root;$/;"	m	class:Tree
+_size	include/bst/Tree.hpp	/^        size_t _size;$/;"	m	class:Tree
+addEdge	include/graph/Graph.hpp	/^    void addEdge(const T &u, const T &v)$/;"	f	struct:Graph
+addNode	include/graph/Graph.hpp	/^    void addNode(const T &u)$/;"	f	struct:Graph
+adj	include/graph/Node.hpp	/^    std::list<Node<T> *> adj;$/;"	m	struct:Node
+allConstruct	Dynamic-Programming/Tabulation.py	/^def allConstruct(target, array):$/;"	f
+allConstruct	Dynamic-Programming/allConstruct.cpp	/^std::vector<std::list<int> > allConstruct(const std::string &target, $/;"	f
+allConstruct	Dynamic-Programming/allConstruct.py	/^def allConstruct(target, wordBank, memo={}):$/;"	f
+are_permutations	src/Strings-Are-Permutations.cpp	/^bool are_permutations(const std::string &s1, const std::string &s2)$/;"	f
+back	include/linkedlist/List.hpp	/^    T &back() const $/;"	f	struct:List
+begin	include/bst/Tree.hpp	/^        Iterator begin() const { return Iterator(_root); }$/;"	f	class:Tree
+bestSum	Dynamic-Programming/Tabulation.py	/^def bestSum(target, arr):$/;"	f
+bestSum	Dynamic-Programming/bestSum.cpp	/^std::list<int> *bestSum(int target, std::vector<int> &numbers,$/;"	f
+bestSum	Dynamic-Programming/bestSum.cpp	/^std::list<int> *bestSum(int target, std::vector<int> numbers)$/;"	f
+canConstruct	Dynamic-Programming/Tabulation.py	/^def canConstruct(target, array):$/;"	f
+canConstruct	Dynamic-Programming/canConstruct.cpp	/^bool canConstruct(const std::string &target, $/;"	f
+canConstruct	Dynamic-Programming/canConstruct.cpp	/^bool canConstruct(const std::string &target, const std::vector<std::string> &wordBank)$/;"	f
+canSum	Dynamic-Programming/Tabulation.py	/^def canSum(target, arr):$/;"	f
+canSum	Dynamic-Programming/canSum.cpp	/^bool canSum(const std::vector<int> &array, int sum, int index)$/;"	f
+canSumIterative	Dynamic-Programming/canSum.cpp	/^bool canSumIterative(const std::vector<int> array, int sum)$/;"	f
+canSumWithRepeats	Dynamic-Programming/canSum.cpp	/^bool canSumWithRepeats(const std::vector<int> &array, int sum, std::unordered_map<int, bool> &lookup)$/;"	f
+canSumWithRepeatsIterative	Dynamic-Programming/canSum.cpp	/^bool canSumWithRepeatsIterative(std::vector<int> array, int sum)$/;"	f
+capacity	src/LRU_Cache.cpp	/^    int capacity;$/;"	m	class:LRUCache	file:
+clear	include/bst/Tree.cpp	/^template<class T> void Tree<T>::clear(TreeNode<T> *node)$/;"	f	class:Tree
+clear	include/bst/Tree.cpp	/^void Tree<T>::clear() $/;"	f	class:Tree
+clear	include/linkedlist/List.hpp	/^    void clear()$/;"	f	struct:List
+clone	include/bst/Tree.cpp	/^template<class T> Tree<T> *Tree<T>::clone() const { $/;"	f	class:Tree
+clone	include/bst/Tree.cpp	/^template<class T> Tree<T> *Tree<T>::clone(TreeNode<T> *node) const$/;"	f	class:Tree
+clone	include/bst/TreeNode.cpp	/^template<class T> TreeNode<T> *TreeNode<T>::clone() const$/;"	f	class:TreeNode
+colEnd	src/MaxSubMatrix.cpp	/^    int colEnd;$/;"	m	struct:SubMatrix	file:
+colStart	src/MaxSubMatrix.cpp	/^    int colStart;$/;"	m	struct:SubMatrix	file:
+compress	src/String-Compression.c	/^char *compress(const char *str)$/;"	f
+construct	include/graph/Graph.hpp	/^    void construct(const std::vector<std::vector<T>> &edgeList)$/;"	f	struct:Graph
+contains	Apartment-Problem/ApartmentDistances.cpp	/^bool contains(const std::vector<std::unordered_set<std::string>> &blocks, int i, const std::string &building)$/;"	f
+contains	include/graph/Graph.hpp	/^    bool contains(const T &u) const$/;"	f	struct:Graph
+contains	include/graph/Node.hpp	/^    bool contains(Node<T> *n) const$/;"	f	struct:Node
+contains	src/Least-Common-Ancestor.cpp	/^bool contains(TreeNode<int> *root, TreeNode<int> *node)$/;"	f
+containsTree	src/CheckSubtree.cpp	/^bool containsTree(TreeNode<T> *t1, TreeNode<T> *t2)$/;"	f
+containsTreeHelper	src/CheckSubtree.cpp	/^bool containsTreeHelper(TreeNode<T> *t1, TreeNode<T> *t2)$/;"	f
+count	src/LFUCache.cpp	/^        int count;$/;"	m	struct:LFUCache::_Node	file:
+countConstruct	Dynamic-Programming/Tabulation.py	/^def countConstruct(target, array):$/;"	f
+countConstruct	Dynamic-Programming/countConstruct.cpp	/^int countConstruct(const std::string &target, $/;"	f
+countConstruct	Dynamic-Programming/countConstruct.cpp	/^int countConstruct(const std::string &target, const std::vector<std::string> &wordBank)$/;"	f
+countIslands	src/GraphCountIslands.cpp	/^int countIslands(std::vector<std::vector<int> > edgeList)$/;"	f
+data	include/bst/TreeNode.hpp	/^        T data;$/;"	m	struct:TreeNode
+data	include/graph/Node.hpp	/^    T data;$/;"	m	struct:Node
+data	include/linkedlist/ListNode.hpp	/^    T data;$/;"	m	struct:ListNode
+deleteTree	src/CheckSubtree.cpp	/^template<class T> void deleteTree(TreeNode<T> *root)$/;"	f
+deleteTree	src/DistanceBetweenBSTNodes.cpp	/^void deleteTree(TreeNode<int> *root)$/;"	f
+dfs	src/GraphCountIslands.cpp	/^void dfs(Node<int> *node)$/;"	f
+distance	include/graph/Node.hpp	/^    int distance;$/;"	m	struct:Node
+distanceBetweenNodes	src/DistanceBetweenBSTNodes.cpp	/^int distanceBetweenNodes(TreeNode<int> *root, TreeNode<int> *n1, TreeNode<int> *n2)$/;"	f
+empty	include/linkedlist/List.hpp	/^    bool empty() const$/;"	f	struct:List
+end	include/bst/Tree.hpp	/^        Iterator end() const { return Iterator(nullptr); }$/;"	f	class:Tree
+end	src/MaxSubMatrix.cpp	/^    int end;$/;"	m	struct:Range	file:
+endTime	src/TimeSchedulingAlgorithm.cpp	/^    Time endTime;$/;"	m	struct:TimeRange	file:
+erase	include/bst/Tree.cpp	/^bool Tree<T>::erase(const T&data) $/;"	f	class:Tree
+erase	include/bst/Tree.cpp	/^template<class T> bool Tree<T>::erase(TreeNode<T> *&current, const T&data)$/;"	f	class:Tree
+expandAroundCenter	src/LongestPalindromeSubstring.cpp	/^        int expandAroundCenter(string s, int left, int right)$/;"	f	class:Solution	file:
+fib	Dynamic-Programming/fib.cpp	/^long fib(int n)$/;"	f
+findLevel	src/DistanceBetweenBSTNodes.cpp	/^int findLevel(TreeNode<int> *root, TreeNode<int> *target, int level)$/;"	f
+find_all_paths	src/BinaryTreePathsWithSums.cpp	/^std::list<std::list<int> > *find_all_paths(TreeNode<int> *root, int sum)$/;"	f
+find_pairs_with_sum	src/pairs-with-sums.cpp	/^std::vector<std::pair<int, int> > find_pairs_with_sum(int sum, std::vector<int> numbers)$/;"	f
+find_shortest_path	src/BinaryTreePathsWithSums.cpp	/^std::list<int> *find_shortest_path(TreeNode<int>*root,int sum)$/;"	f
+front	include/linkedlist/List.hpp	/^    T &front() const$/;"	f	struct:List
+get	src/LRU_Cache.cpp	/^int LRUCache::get(int key)$/;"	f	class:LRUCache
+getBestDistance	Apartment-Problem/ApartmentDistances.cpp	/^int getBestDistance(const std::vector<std::unordered_set<std::string>> &blocks, const std::vector<std::string> &requirements)$/;"	f
+getDurationInMinutes	src/TimeSchedulingAlgorithm.cpp	/^    int getDurationInMinutes() const$/;"	f	struct:TimeRange
+getMaxMatrix	src/MaxSubMatrix.cpp	/^SubMatrix getMaxMatrix(const std::vector<std::vector<int> > &matrix)$/;"	f
+getMaxSubArray	src/MaxSubMatrix.cpp	/^Range getMaxSubArray(int *array, int n)$/;"	f
+getMinimumIsland	src/MinimumIsland.cpp	/^int getMinimumIsland(const std::vector<std::vector<char> > &grid)$/;"	f
+getSize	include/bst/Tree.cpp	/^static size_t getSize(TreeNode<T> *root)$/;"	f	file:
+get_path	src/Least-Common-Ancestor.cpp	/^bool get_path(TreeNode<int> *root, TreeNode<int> *target,$/;"	f
+gridTraveler	Dynamic-Programming/gridTraveler.py	/^def gridTraveler(m,n):$/;"	f
+hasPrefix	Dynamic-Programming/allConstruct.cpp	/^bool hasPrefix(const std::string &target, const std::string &prefix, int offset)$/;"	f
+has_unique_characters	src/IsUniqueString.cpp	/^bool has_unique_characters(const std::string &str)$/;"	f
+head	include/linkedlist/List.hpp	/^    ListNode<T> *head;$/;"	m	struct:List
+head	src/LRU_Cache.cpp	/^    _Node *head;$/;"	m	class:LRUCache	file:
+head	src/MergeKSortedList.cpp	/^    ListNode *head;$/;"	m	struct:List	file:
+height	src/CircusTower.cpp	/^    int height;$/;"	m	struct:Person	file:
+hours	src/TimeSchedulingAlgorithm.cpp	/^    int hours;$/;"	m	struct:Time	file:
+howSum	Dynamic-Programming/Tabulation.py	/^def howSum(target, arr):$/;"	f
+howSum	Dynamic-Programming/howSum.cpp	/^bool howSum(int target, std::vector<int> &numbers, std::vector<int> &path)$/;"	f
+howSum	Dynamic-Programming/howSum.cpp	/^std::vector<int> howSum(int target, std::vector<int> numbers)$/;"	f
+howSumMemo	Dynamic-Programming/howSum.cpp	/^std::list<int> *howSumMemo(int target, std::vector<int> &numbers,$/;"	f
+insert	include/bst/Tree.cpp	/^template<class T> void Tree<T>::insert(TreeNode<T> *&current, const T &data)$/;"	f	class:Tree
+insert	include/bst/Tree.cpp	/^void Tree<T>::insert(const T&data) $/;"	f	class:Tree
+insertAfter	include/linkedlist/ListNode.hpp	/^    ListNode *insertAfter(const T &data)$/;"	f	struct:ListNode
+insertBefore	include/linkedlist/ListNode.hpp	/^    ListNode *insertBefore(const T &data)$/;"	f	struct:ListNode
+insertLeft	src/DistanceBetweenBSTNodes.cpp	/^TreeNode<int> *insertLeft(TreeNode<int> *root, int data)$/;"	f
+insertRight	src/DistanceBetweenBSTNodes.cpp	/^TreeNode<int> *insertRight(TreeNode<int> *root, int data)$/;"	f
+isBetween	src/TimeSchedulingAlgorithm.cpp	/^    bool isBetween(const Time &start, const Time &end) const$/;"	f	struct:Time
+is_anagram	src/IsAnagram.cpp	/^bool is_anagram(const std::string &s1, const std::string &s2)$/;"	f
+key	src/LFUCache.cpp	/^        int key; $/;"	m	struct:LFUCache::_Node	file:
+key	src/LRU_Cache.cpp	/^    int key;$/;"	m	struct:_Node	file:
+lca	src/DistanceBetweenBSTNodes.cpp	/^TreeNode<int> *lca(TreeNode<int> *root, TreeNode<int> *n1, TreeNode<int> *n2)$/;"	f
+lca	src/Least-Common-Ancestor.cpp	/^TreeNode<int> *lca(TreeNode<int> *subtree, TreeNode<int> *n1, TreeNode<int> *n2)$/;"	f
+lca_with_list_intersection	src/Least-Common-Ancestor.cpp	/^TreeNode<int> *lca_with_list_intersection(TreeNode<int> *root, TreeNode<int> *n1, TreeNode<int> *n2)$/;"	f
+lcs	src/LongestCommonSubstring.cpp	/^std::string lcs(std::string s1, std::string s2)$/;"	f
+left	include/bst/TreeNode.hpp	/^        TreeNode<T> *left;$/;"	m	struct:TreeNode
+longestPalindrome	src/LongestPalindromeSubstring.cpp	/^        string longestPalindrome(string s)$/;"	f	class:Solution
+longestSubsequenceLength	src/CircusTower.cpp	/^int longestSubsequenceLength(std::vector<Person> elements, $/;"	f
+main	Apartment-Problem/ApartmentDistances.cpp	/^int main()$/;"	f
+main	Dynamic-Programming/LCS.cpp	/^int main()$/;"	f
+main	Dynamic-Programming/LIS.cpp	/^int main() $/;"	f
+main	Dynamic-Programming/SCS.cpp	/^int main()$/;"	f
+main	Dynamic-Programming/allConstruct.cpp	/^int main(int args, const char *argv[])$/;"	f
+main	Dynamic-Programming/bestSum.cpp	/^int main()$/;"	f
+main	Dynamic-Programming/canConstruct.cpp	/^int main()$/;"	f
+main	Dynamic-Programming/canSum.cpp	/^int main()$/;"	f
+main	Dynamic-Programming/countConstruct.cpp	/^int main()$/;"	f
+main	Dynamic-Programming/fib.cpp	/^int main()$/;"	f
+main	Dynamic-Programming/howSum.cpp	/^int main()$/;"	f
+main	src/BinaryTreePathsWithSums.cpp	/^int main()$/;"	f
+main	src/CheckSubtree.cpp	/^int main()$/;"	f
+main	src/CircusTower.cpp	/^int main()$/;"	f
+main	src/DistanceBetweenBSTNodes.cpp	/^int main()$/;"	f
+main	src/GraphCountIslands.cpp	/^int main()$/;"	f
+main	src/IsAnagram.cpp	/^int main()$/;"	f
+main	src/IsUniqueString.cpp	/^int main()$/;"	f
+main	src/LRU_Cache.cpp	/^int main()$/;"	f
+main	src/LongestCommonSubstring.cpp	/^int main()$/;"	f
+main	src/LongestPalindromeSubstring.cpp	/^int main(){return 0;}/;"	f
+main	src/MaxSubMatrix.cpp	/^int main()$/;"	f
+main	src/MergeKSortedList.cpp	/^int main()$/;"	f
+main	src/MinimumIsland.cpp	/^int main()$/;"	f
+main	src/String-Compression.c	/^int main(int argc, const char *argv[])$/;"	f
+main	src/Strings-Are-Permutations.cpp	/^int main()$/;"	f
+main	src/TimeSchedulingAlgorithm.cpp	/^int main()$/;"	f
+main	src/TopologicalSort.cpp	/^int main()$/;"	f
+main	src/URLify.c	/^int main()$/;"	f
+main	src/pairs-with-sums.cpp	/^int main()$/;"	f
+main	src/test_tree.cpp	/^int main()$/;"	f
+maxCircusTowerSize	src/CircusTower.cpp	/^int maxCircusTowerSize(std::vector<Person> entries)$/;"	f
+merge	src/TimeSchedulingAlgorithm.cpp	/^    TimeRange merge(TimeRange other) const$/;"	f	struct:TimeRange
+mergeKLists	src/MergeKSortedList.cpp	/^    ListNode *mergeKLists(vector<ListNode *> &lists)$/;"	f	class:Solution
+mergeTwoLists	src/MergeKSortedList.cpp	/^    ListNode *mergeTwoLists(ListNode *u, ListNode *v)$/;"	f	class:Solution
+minutes	src/TimeSchedulingAlgorithm.cpp	/^    int minutes;$/;"	m	struct:Time	file:
+moveToFront	src/LRU_Cache.cpp	/^void LRUCache::moveToFront(_Node *node)$/;"	f	class:LRUCache
+mp	src/LRU_Cache.cpp	/^    unordered_map<int, _Node *> mp;$/;"	m	class:LRUCache	file:
+next	include/linkedlist/ListNode.hpp	/^    ListNode<T> *next;$/;"	m	struct:ListNode
+next	src/LRU_Cache.cpp	/^    _Node *next;$/;"	m	struct:_Node	file:
+next	src/MergeKSortedList.cpp	/^    ListNode *next;$/;"	m	struct:ListNode	file:
+nodes	include/graph/Graph.hpp	/^    std::unordered_map<T, Node<T> *> nodes;$/;"	m	struct:Graph
+operator !=	include/bst/Tree.cpp	/^bool Tree<T>::Iterator::operator!=(Tree<T>::Iterator other) const$/;"	f	class:Tree::Iterator
+operator ()	src/CircusTower.cpp	/^    bool operator()(Person p1, Person p2) const { $/;"	f	struct:HeightCmp
+operator *	include/bst/Tree.cpp	/^const T &Tree<T>::Iterator::operator*() const$/;"	f	class:Tree::Iterator
+operator ++	include/bst/Tree.cpp	/^typename Tree<T>::Iterator &Tree<T>::Iterator::operator++()$/;"	f	class:Tree::Iterator
+operator ++	include/bst/Tree.cpp	/^typename Tree<T>::Iterator Tree<T>::Iterator::operator++(int)$/;"	f	class:Tree::Iterator
+operator <	src/TimeSchedulingAlgorithm.cpp	/^    bool operator<(const Time &other) const$/;"	f	struct:Time
+operator <	src/TimeSchedulingAlgorithm.cpp	/^    bool operator<(const TimeRange &other) const$/;"	f	struct:TimeRange
+operator =	src/TimeSchedulingAlgorithm.cpp	/^    bool operator=(const TimeRange &other) const$/;"	f	struct:TimeRange
+operator ==	src/TimeSchedulingAlgorithm.cpp	/^    bool operator==(const Time &other) const$/;"	f	struct:Time
+overlaps	src/TimeSchedulingAlgorithm.cpp	/^    bool overlaps(TimeRange other) const$/;"	f	struct:TimeRange
+parent	include/graph/Node.hpp	/^    Node<T> *parent;$/;"	m	struct:Node
+pop_back	include/linkedlist/List.hpp	/^    void pop_back()$/;"	f	struct:List
+pop_front	include/linkedlist/List.hpp	/^    void pop_front()$/;"	f	struct:List
+prev	include/linkedlist/ListNode.hpp	/^    ListNode<T> *prev;$/;"	m	struct:ListNode
+prev	src/LRU_Cache.cpp	/^    _Node *prev;$/;"	m	struct:_Node	file:
+print	include/bst/Tree.cpp	/^template<class T> void Tree<T>::print( const TreeNode<T> *node, int depth ) const$/;"	f	class:Tree
+print	include/bst/Tree.cpp	/^void Tree<T>::print() const $/;"	f	class:Tree
+print	src/MaxSubMatrix.cpp	/^    void print() const$/;"	f	struct:SubMatrix
+print	src/MergeKSortedList.cpp	/^    void print()$/;"	f	struct:List
+printCache	src/LRU_Cache.cpp	/^void LRUCache::printCache()$/;"	f	class:LRUCache
+printGraph	src/GraphCountIslands.cpp	/^void printGraph(const Graph<int> &graph)$/;"	f
+printList	src/test_list.cpp	/^void printList(ListNode<int> *head)$/;"	f
+printResult	Dynamic-Programming/bestSum.cpp	/^void printResult(std::list<int> *result)$/;"	f
+push_back	include/linkedlist/List.hpp	/^    void push_back()$/;"	f	struct:List
+push_back	src/MergeKSortedList.cpp	/^    void push_back(ListNode *node)$/;"	f	struct:List
+push_back	src/MergeKSortedList.cpp	/^    void push_back(int val)$/;"	f	struct:List
+push_front	include/linkedlist/List.hpp	/^    void push_front(const T &data)$/;"	f	struct:List
+put	src/LFUCache.cpp	/^void LFUCache::put(int key, int value)$/;"	f	class:LFUCache
+put	src/LRU_Cache.cpp	/^void LRUCache::put(int key, int value)$/;"	f	class:LRUCache
+removeAfter	include/linkedlist/ListNode.hpp	/^    void removeAfter()$/;"	f	struct:ListNode
+removeBefore	include/linkedlist/ListNode.hpp	/^    void removeBefore()$/;"	f	struct:ListNode
+results	Dynamic-Programming/allConstruct.py	/^            results = allConstruct(target, wordBank)$/;"	v
+right	include/bst/TreeNode.hpp	/^        TreeNode<T> *right;$/;"	m	struct:TreeNode
+rowEnd	src/MaxSubMatrix.cpp	/^    int rowEnd;$/;"	m	struct:SubMatrix	file:
+rowStart	src/MaxSubMatrix.cpp	/^    int rowStart;$/;"	m	struct:SubMatrix	file:
+scheduleMeeting	src/TimeSchedulingAlgorithm.cpp	/^std::list<TimeRange> *scheduleMeeting(std::vector<TimeRange> cal1, std::vector<TimeRange> cal2, TimeRange bounds, int durationInMinutes)$/;"	f
+setFindRoot	src/MinimumIsland.cpp	/^int setFindRoot(std::vector<int> &set, int index)$/;"	f
+size	include/bst/Tree.cpp	/^size_t Tree<T>::size() const $/;"	f	class:Tree
+size	include/linkedlist/List.hpp	/^    unsigned int size;$/;"	m	struct:List
+size	include/linkedlist/ListNode.hpp	/^template <class T> unsigned int size(ListNode<T> *node)$/;"	f
+size	src/LRU_Cache.cpp	/^    int size;$/;"	m	class:LRUCache	file:
+start	src/MaxSubMatrix.cpp	/^    int start;$/;"	m	struct:Range	file:
+startTime	src/TimeSchedulingAlgorithm.cpp	/^    Time startTime;$/;"	m	struct:TimeRange	file:
+std	Makefile	/^	gcc -std=c11 $^ -o $@$/;"	m
+std	Makefile	/^	gcc -std=c11 -Wall -c $< -o $@$/;"	m
+sum	src/MaxSubMatrix.cpp	/^    int sum;$/;"	m	struct:Range	file:
+sum	src/MaxSubMatrix.cpp	/^    int sum;$/;"	m	struct:SubMatrix	file:
+tail	include/linkedlist/List.hpp	/^    ListNode<T> *tail;$/;"	m	struct:List
+tail	src/LRU_Cache.cpp	/^    _Node *tail;$/;"	m	class:LRUCache	file:
+tail	src/MergeKSortedList.cpp	/^    ListNode *tail;$/;"	m	struct:List	file:
+target	Dynamic-Programming/allConstruct.py	/^            target = input("Enter target:")$/;"	v
+topologicalSort	src/TopologicalSort.cpp	/^std::vector<T> topologicalSort(std::vector<std::pair<T, T> > &edges)$/;"	f
+unionSet	src/MinimumIsland.cpp	/^void unionSet(std::vector<int> &set, int x, int y)$/;"	f
+update_results	src/BinaryTreePathsWithSums.cpp	/^void update_results(std::list<std::list<int> > *from, int data, std::list<std::list<int> > *to)$/;"	f
+val	src/LRU_Cache.cpp	/^    int val;$/;"	m	struct:_Node	file:
+val	src/MergeKSortedList.cpp	/^    int val;$/;"	m	struct:ListNode	file:
+value	src/LFUCache.cpp	/^        int value;$/;"	m	struct:LFUCache::_Node	file:
+visited	include/graph/Node.hpp	/^    bool visited;$/;"	m	struct:Node
+weight	src/CircusTower.cpp	/^    int weight;$/;"	m	struct:Person	file:
+word	Dynamic-Programming/allConstruct.py	/^                    word = input("Word bank entry:")$/;"	v
+wordBank	Dynamic-Programming/allConstruct.py	/^            wordBank = []$/;"	v
+~Graph	include/graph/Graph.hpp	/^    ~Graph()$/;"	f	struct:Graph
+~LRUCache	src/LRU_Cache.cpp	/^LRUCache::~LRUCache()$/;"	f	class:LRUCache
+~List	include/linkedlist/List.hpp	/^    ~List()$/;"	f	struct:List
+~ListNode	include/linkedlist/ListNode.hpp	/^    ~ListNode() {}$/;"	f	struct:ListNode
+~Tree	include/bst/Tree.cpp	/^template<class T> Tree<T>::~Tree()$/;"	f	class:Tree
+~TreeNode	include/bst/TreeNode.cpp	/^template<class T> TreeNode<T>::~TreeNode() {}$/;"	f	class:TreeNode
