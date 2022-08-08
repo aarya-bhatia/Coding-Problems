@@ -19,13 +19,13 @@ INCLUDES	Makefile	/^INCLUDES=$(addprefix -I, $(DIRS))$/;"	m
 INC_FILES	Makefile	/^INC_FILES=$(shell find include -type f -name "*.cpp")$/;"	m
 Iterator	include/bst/Tree.cpp	/^template<class T> Tree<T>::Iterator::Iterator(TreeNode<T> *current): $/;"	f	class:Tree::Iterator
 Iterator	include/bst/Tree.hpp	/^        class Iterator$/;"	c	class:Tree
-Iterator	src/LFUCache.cpp	/^    typedef list<_Node>::iterator Iterator;$/;"	t	class:LFUCache	file:
+Iterator	src/LFUCache.cpp	/^    typedef list<Node>::iterator Iterator;$/;"	t	class:LFUCache	file:
 LAND	src/MinimumIsland.cpp	/^#define LAND /;"	d	file:
 LCSLength	Dynamic-Programming/LCS.cpp	/^int LCSLength(const std::string &x, const std::string &y, int m, int n)$/;"	f
 LCSLengthOptimized	Dynamic-Programming/LCS.cpp	/^int LCSLengthOptimized(const std::string &x, const std::string &y)$/;"	f
 LCSLengthOptimized	Dynamic-Programming/LCS.cpp	/^int LCSLengthOptimized(const std::string &x, const std::string &y, int m, int n, $/;"	f
-LFUCache	src/LFUCache.cpp	/^LFUCache(int capacity):: _capacity(capacity)$/;"	f
-LFUCache	src/LFUCache.cpp	/^class LFUCache {$/;"	c	file:
+LFUCache	src/LFUCache.cpp	/^LFUCache::LFUCache(int capacity) : _capacity(capacity)$/;"	f	class:LFUCache
+LFUCache	src/LFUCache.cpp	/^class LFUCache$/;"	c	file:
 LRUCache	src/LRU_Cache.cpp	/^LRUCache::LRUCache(int capacity) : capacity(capacity)$/;"	f	class:LRUCache
 LRUCache	src/LRU_Cache.cpp	/^class LRUCache$/;"	c	file:
 List	include/linkedlist/List.hpp	/^    List()$/;"	f	struct:List
@@ -43,12 +43,15 @@ ListNode	src/MergeKSortedList.cpp	/^struct ListNode$/;"	s	file:
 MyHash	Dynamic-Programming/SCS.cpp	/^struct MyHash$/;"	s	file:
 Node	include/graph/Node.hpp	/^    Node(const T &data) : data(data)$/;"	f	struct:Node
 Node	include/graph/Node.hpp	/^struct Node$/;"	s
+Node	src/LFUCache.cpp	/^        Node(int k = 0, int v = 0) : key(k), value(v)$/;"	f	struct:LFUCache::Node
+Node	src/LFUCache.cpp	/^    struct Node$/;"	s	class:LFUCache	file:
 OBJ_DIR	Dynamic-Programming/Makefile	/^OBJ_DIR=obj$/;"	m
 Person	src/CircusTower.cpp	/^struct Person$/;"	s	file:
 Range	src/MaxSubMatrix.cpp	/^    Range(int start, int end, int sum): start(start), end(end), sum(sum)$/;"	f	struct:Range
 Range	src/MaxSubMatrix.cpp	/^struct Range$/;"	s	file:
 SCSLength	Dynamic-Programming/SCS.cpp	/^int SCSLength(std::string x, std::string y)$/;"	f
 SCSLength	Dynamic-Programming/SCS.cpp	/^int SCSLength(std::string x, std::string y, int m, int n, $/;"	f
+Solution	src/CourseSchedule-LC207.cpp	/^class Solution$/;"	c	file:
 Solution	src/LongestPalindromeSubstring.cpp	/^class Solution$/;"	c	file:
 Solution	src/MergeKSortedList.cpp	/^class Solution$/;"	c	file:
 SubMatrix	src/MaxSubMatrix.cpp	/^    SubMatrix(int rowStart, int colStart, int rowEnd, int colEnd, int sum):$/;"	f	struct:SubMatrix
@@ -65,19 +68,20 @@ TreeNode	include/bst/TreeNode.cpp	/^TreeNode<T>::TreeNode(const T &data): data(d
 TreeNode	include/bst/TreeNode.hpp	/^struct TreeNode{$/;"	s
 URLify	src/URLify.c	/^char *URLify(const char *str)$/;"	f
 WATER	src/MinimumIsland.cpp	/^#define WATER /;"	d	file:
-_Node	src/LFUCache.cpp	/^        _Node(int k=0,int v=0): key(v), value(v) $/;"	f	struct:LFUCache::_Node
-_Node	src/LFUCache.cpp	/^    struct _Node $/;"	s	class:LFUCache	file:
 _Node	src/LRU_Cache.cpp	/^_Node::_Node()$/;"	f	class:_Node
 _Node	src/LRU_Cache.cpp	/^struct _Node$/;"	s	file:
-_capacity	src/LFUCache.cpp	/^    int _capacity, _min_freq, _max_freq;$/;"	m	class:LFUCache	file:
+_capacity	src/LFUCache.cpp	/^    int _capacity;$/;"	m	class:LFUCache	file:
+_containsKey	src/LFUCache.cpp	/^bool LFUCache::_containsKey(int key) const$/;"	f	class:LFUCache
 _current	include/bst/Tree.hpp	/^                TreeNode<T> *_current;$/;"	m	class:Tree::Iterator
-_list	src/LFUCache.cpp	/^    unordered_map<int,list<_Node>> _list;$/;"	m	class:LFUCache	file:
-_map	src/LFUCache.cpp	/^    unordered_map<int,Iterator> _map;$/;"	m	class:LFUCache	file:
-_max_freq	src/LFUCache.cpp	/^    int _capacity, _min_freq, _max_freq;$/;"	m	class:LFUCache	file:
-_min_freq	src/LFUCache.cpp	/^    int _capacity, _min_freq, _max_freq;$/;"	m	class:LFUCache	file:
+_evict	src/LFUCache.cpp	/^void LFUCache::_evict()$/;"	f	class:LFUCache
+_freq	src/LFUCache.cpp	/^    set<int> _freq;$/;"	m	class:LFUCache	file:
+_list	src/LFUCache.cpp	/^    unordered_map<int, list<Node>> _list;$/;"	m	class:LFUCache	file:
+_map	src/LFUCache.cpp	/^    unordered_map<int, Iterator> _map;$/;"	m	class:LFUCache	file:
 _queue	include/bst/Tree.hpp	/^                std::queue<TreeNode<T> *> _queue;$/;"	m	class:Tree::Iterator
 _root	include/bst/Tree.hpp	/^        TreeNode<T> *_root;$/;"	m	class:Tree
 _size	include/bst/Tree.hpp	/^        size_t _size;$/;"	m	class:Tree
+_size	src/LFUCache.cpp	/^    int _size;$/;"	m	class:LFUCache	file:
+_touch	src/LFUCache.cpp	/^LFUCache::Iterator LFUCache::_touch(int key)$/;"	f	class:LFUCache
 addEdge	include/graph/Graph.hpp	/^    void addEdge(const T &u, const T &v)$/;"	f	struct:Graph
 addNode	include/graph/Graph.hpp	/^    void addNode(const T &u)$/;"	f	struct:Graph
 adj	include/graph/Node.hpp	/^    std::list<Node<T> *> adj;$/;"	m	struct:Node
@@ -90,9 +94,11 @@ begin	include/bst/Tree.hpp	/^        Iterator begin() const { return Iterator(_r
 bestSum	Dynamic-Programming/Tabulation.py	/^def bestSum(target, arr):$/;"	f
 bestSum	Dynamic-Programming/bestSum.cpp	/^std::list<int> *bestSum(int target, std::vector<int> &numbers,$/;"	f
 bestSum	Dynamic-Programming/bestSum.cpp	/^std::list<int> *bestSum(int target, std::vector<int> numbers)$/;"	f
+boolToCharArray	src/LettersAndNumbers-CTCI_17.4.cpp	/^vector<char> boolToCharArray(vector<bool> bv)$/;"	f
 canConstruct	Dynamic-Programming/Tabulation.py	/^def canConstruct(target, array):$/;"	f
 canConstruct	Dynamic-Programming/canConstruct.cpp	/^bool canConstruct(const std::string &target, $/;"	f
 canConstruct	Dynamic-Programming/canConstruct.cpp	/^bool canConstruct(const std::string &target, const std::vector<std::string> &wordBank)$/;"	f
+canFinish	src/CourseSchedule-LC207.cpp	/^bool Solution::canFinish(int numCourses, vector<vector<int>> &prerequisites)$/;"	f	class:Solution
 canSum	Dynamic-Programming/Tabulation.py	/^def canSum(target, arr):$/;"	f
 canSum	Dynamic-Programming/canSum.cpp	/^bool canSum(const std::vector<int> &array, int sum, int index)$/;"	f
 canSumIterative	Dynamic-Programming/canSum.cpp	/^bool canSumIterative(const std::vector<int> array, int sum)$/;"	f
@@ -115,7 +121,7 @@ contains	include/graph/Node.hpp	/^    bool contains(Node<T> *n) const$/;"	f	stru
 contains	src/Least-Common-Ancestor.cpp	/^bool contains(TreeNode<int> *root, TreeNode<int> *node)$/;"	f
 containsTree	src/CheckSubtree.cpp	/^bool containsTree(TreeNode<T> *t1, TreeNode<T> *t2)$/;"	f
 containsTreeHelper	src/CheckSubtree.cpp	/^bool containsTreeHelper(TreeNode<T> *t1, TreeNode<T> *t2)$/;"	f
-count	src/LFUCache.cpp	/^        int count;$/;"	m	struct:LFUCache::_Node	file:
+count	src/LFUCache.cpp	/^        int count;$/;"	m	struct:LFUCache::Node	file:
 countConstruct	Dynamic-Programming/Tabulation.py	/^def countConstruct(target, array):$/;"	f
 countConstruct	Dynamic-Programming/countConstruct.cpp	/^int countConstruct(const std::string &target, $/;"	f
 countConstruct	Dynamic-Programming/countConstruct.cpp	/^int countConstruct(const std::string &target, const std::vector<std::string> &wordBank)$/;"	f
@@ -123,6 +129,7 @@ countIslands	src/GraphCountIslands.cpp	/^int countIslands(std::vector<std::vecto
 data	include/bst/TreeNode.hpp	/^        T data;$/;"	m	struct:TreeNode
 data	include/graph/Node.hpp	/^    T data;$/;"	m	struct:Node
 data	include/linkedlist/ListNode.hpp	/^    T data;$/;"	m	struct:ListNode
+debug	src/LFUCache.cpp	/^#define debug /;"	d	file:
 deleteTree	src/CheckSubtree.cpp	/^template<class T> void deleteTree(TreeNode<T> *root)$/;"	f
 deleteTree	src/DistanceBetweenBSTNodes.cpp	/^void deleteTree(TreeNode<int> *root)$/;"	f
 dfs	src/GraphCountIslands.cpp	/^void dfs(Node<int> *node)$/;"	f
@@ -141,6 +148,7 @@ find_all_paths	src/BinaryTreePathsWithSums.cpp	/^std::list<std::list<int> > *fin
 find_pairs_with_sum	src/pairs-with-sums.cpp	/^std::vector<std::pair<int, int> > find_pairs_with_sum(int sum, std::vector<int> numbers)$/;"	f
 find_shortest_path	src/BinaryTreePathsWithSums.cpp	/^std::list<int> *find_shortest_path(TreeNode<int>*root,int sum)$/;"	f
 front	include/linkedlist/List.hpp	/^    T &front() const$/;"	f	struct:List
+get	src/LFUCache.cpp	/^int LFUCache::get(int key)$/;"	f	class:LFUCache
 get	src/LRU_Cache.cpp	/^int LRUCache::get(int key)$/;"	f	class:LRUCache
 getBestDistance	Apartment-Problem/ApartmentDistances.cpp	/^int getBestDistance(const std::vector<std::unordered_set<std::string>> &blocks, const std::vector<std::string> &requirements)$/;"	f
 getDurationInMinutes	src/TimeSchedulingAlgorithm.cpp	/^    int getDurationInMinutes() const$/;"	f	struct:TimeRange
@@ -161,6 +169,7 @@ howSum	Dynamic-Programming/Tabulation.py	/^def howSum(target, arr):$/;"	f
 howSum	Dynamic-Programming/howSum.cpp	/^bool howSum(int target, std::vector<int> &numbers, std::vector<int> &path)$/;"	f
 howSum	Dynamic-Programming/howSum.cpp	/^std::vector<int> howSum(int target, std::vector<int> numbers)$/;"	f
 howSumMemo	Dynamic-Programming/howSum.cpp	/^std::list<int> *howSumMemo(int target, std::vector<int> &numbers,$/;"	f
+inbound	src/CourseSchedule-LC207.cpp	/^    unordered_map<int, list<int>> inbound; \/\/ maps node to list of inbound nodes$/;"	m	class:Solution	file:
 insert	include/bst/Tree.cpp	/^template<class T> void Tree<T>::insert(TreeNode<T> *&current, const T &data)$/;"	f	class:Tree
 insert	include/bst/Tree.cpp	/^void Tree<T>::insert(const T&data) $/;"	f	class:Tree
 insertAfter	include/linkedlist/ListNode.hpp	/^    ListNode *insertAfter(const T &data)$/;"	f	struct:ListNode
@@ -169,13 +178,14 @@ insertLeft	src/DistanceBetweenBSTNodes.cpp	/^TreeNode<int> *insertLeft(TreeNode<
 insertRight	src/DistanceBetweenBSTNodes.cpp	/^TreeNode<int> *insertRight(TreeNode<int> *root, int data)$/;"	f
 isBetween	src/TimeSchedulingAlgorithm.cpp	/^    bool isBetween(const Time &start, const Time &end) const$/;"	f	struct:Time
 is_anagram	src/IsAnagram.cpp	/^bool is_anagram(const std::string &s1, const std::string &s2)$/;"	f
-key	src/LFUCache.cpp	/^        int key; $/;"	m	struct:LFUCache::_Node	file:
+key	src/LFUCache.cpp	/^        int key;$/;"	m	struct:LFUCache::Node	file:
 key	src/LRU_Cache.cpp	/^    int key;$/;"	m	struct:_Node	file:
 lca	src/DistanceBetweenBSTNodes.cpp	/^TreeNode<int> *lca(TreeNode<int> *root, TreeNode<int> *n1, TreeNode<int> *n2)$/;"	f
 lca	src/Least-Common-Ancestor.cpp	/^TreeNode<int> *lca(TreeNode<int> *subtree, TreeNode<int> *n1, TreeNode<int> *n2)$/;"	f
 lca_with_list_intersection	src/Least-Common-Ancestor.cpp	/^TreeNode<int> *lca_with_list_intersection(TreeNode<int> *root, TreeNode<int> *n1, TreeNode<int> *n2)$/;"	f
 lcs	src/LongestCommonSubstring.cpp	/^std::string lcs(std::string s1, std::string s2)$/;"	f
 left	include/bst/TreeNode.hpp	/^        TreeNode<T> *left;$/;"	m	struct:TreeNode
+log	src/LFUCache.cpp	/^void LFUCache::log() const$/;"	f	class:LFUCache
 longestPalindrome	src/LongestPalindromeSubstring.cpp	/^        string longestPalindrome(string s)$/;"	f	class:Solution
 longestSubsequenceLength	src/CircusTower.cpp	/^int longestSubsequenceLength(std::vector<Person> elements, $/;"	f
 main	Apartment-Problem/ApartmentDistances.cpp	/^int main()$/;"	f
@@ -189,14 +199,18 @@ main	Dynamic-Programming/canSum.cpp	/^int main()$/;"	f
 main	Dynamic-Programming/countConstruct.cpp	/^int main()$/;"	f
 main	Dynamic-Programming/fib.cpp	/^int main()$/;"	f
 main	Dynamic-Programming/howSum.cpp	/^int main()$/;"	f
+main	src/BabyNames-CTCI_17.7.cpp	/^int main()$/;"	f
 main	src/BinaryTreePathsWithSums.cpp	/^int main()$/;"	f
 main	src/CheckSubtree.cpp	/^int main()$/;"	f
 main	src/CircusTower.cpp	/^int main()$/;"	f
+main	src/CourseSchedule-LC207.cpp	/^int main()$/;"	f
 main	src/DistanceBetweenBSTNodes.cpp	/^int main()$/;"	f
 main	src/GraphCountIslands.cpp	/^int main()$/;"	f
 main	src/IsAnagram.cpp	/^int main()$/;"	f
 main	src/IsUniqueString.cpp	/^int main()$/;"	f
+main	src/LFUCache.cpp	/^int main()$/;"	f
 main	src/LRU_Cache.cpp	/^int main()$/;"	f
+main	src/LettersAndNumbers-CTCI_17.4.cpp	/^int main()$/;"	f
 main	src/LongestCommonSubstring.cpp	/^int main()$/;"	f
 main	src/LongestPalindromeSubstring.cpp	/^int main(){return 0;}/;"	f
 main	src/MaxSubMatrix.cpp	/^int main()$/;"	f
@@ -229,6 +243,7 @@ operator <	src/TimeSchedulingAlgorithm.cpp	/^    bool operator<(const Time &othe
 operator <	src/TimeSchedulingAlgorithm.cpp	/^    bool operator<(const TimeRange &other) const$/;"	f	struct:TimeRange
 operator =	src/TimeSchedulingAlgorithm.cpp	/^    bool operator=(const TimeRange &other) const$/;"	f	struct:TimeRange
 operator ==	src/TimeSchedulingAlgorithm.cpp	/^    bool operator==(const Time &other) const$/;"	f	struct:Time
+outbound	src/CourseSchedule-LC207.cpp	/^    unordered_map<int, set<int>> outbound; \/\/ maps node to list of outbound nodes$/;"	m	class:Solution	file:
 overlaps	src/TimeSchedulingAlgorithm.cpp	/^    bool overlaps(TimeRange other) const$/;"	f	struct:TimeRange
 parent	include/graph/Node.hpp	/^    Node<T> *parent;$/;"	m	struct:Node
 pop_back	include/linkedlist/List.hpp	/^    void pop_back()$/;"	f	struct:List
@@ -243,6 +258,7 @@ printCache	src/LRU_Cache.cpp	/^void LRUCache::printCache()$/;"	f	class:LRUCache
 printGraph	src/GraphCountIslands.cpp	/^void printGraph(const Graph<int> &graph)$/;"	f
 printList	src/test_list.cpp	/^void printList(ListNode<int> *head)$/;"	f
 printResult	Dynamic-Programming/bestSum.cpp	/^void printResult(std::list<int> *result)$/;"	f
+processing	src/CourseSchedule-LC207.cpp	/^    queue<int> processing;$/;"	m	class:Solution	file:
 push_back	include/linkedlist/List.hpp	/^    void push_back()$/;"	f	struct:List
 push_back	src/MergeKSortedList.cpp	/^    void push_back(ListNode *node)$/;"	f	struct:List
 push_back	src/MergeKSortedList.cpp	/^    void push_back(int val)$/;"	f	struct:List
@@ -261,6 +277,8 @@ size	include/bst/Tree.cpp	/^size_t Tree<T>::size() const $/;"	f	class:Tree
 size	include/linkedlist/List.hpp	/^    unsigned int size;$/;"	m	struct:List
 size	include/linkedlist/ListNode.hpp	/^template <class T> unsigned int size(ListNode<T> *node)$/;"	f
 size	src/LRU_Cache.cpp	/^    int size;$/;"	m	class:LRUCache	file:
+solve	src/BabyNames-CTCI_17.7.cpp	/^void solve(unordered_map<string, int> &freq_map, unordered_map<string, string> &word_map){$/;"	f
+solve	src/LettersAndNumbers-CTCI_17.4.cpp	/^vector<char> solve(vector<char> array)$/;"	f
 start	src/MaxSubMatrix.cpp	/^    int start;$/;"	m	struct:Range	file:
 startTime	src/TimeSchedulingAlgorithm.cpp	/^    Time startTime;$/;"	m	struct:TimeRange	file:
 std	Makefile	/^	gcc -std=c11 $^ -o $@$/;"	m
@@ -271,12 +289,14 @@ tail	include/linkedlist/List.hpp	/^    ListNode<T> *tail;$/;"	m	struct:List
 tail	src/LRU_Cache.cpp	/^    _Node *tail;$/;"	m	class:LRUCache	file:
 tail	src/MergeKSortedList.cpp	/^    ListNode *tail;$/;"	m	struct:List	file:
 target	Dynamic-Programming/allConstruct.py	/^            target = input("Enter target:")$/;"	v
+to_string	src/LFUCache.cpp	/^        std::string to_string() const$/;"	f	struct:LFUCache::Node
 topologicalSort	src/TopologicalSort.cpp	/^std::vector<T> topologicalSort(std::vector<std::pair<T, T> > &edges)$/;"	f
 unionSet	src/MinimumIsland.cpp	/^void unionSet(std::vector<int> &set, int x, int y)$/;"	f
+updatePath	src/BabyNames-CTCI_17.7.cpp	/^void updatePath(const string &current, $/;"	f
 update_results	src/BinaryTreePathsWithSums.cpp	/^void update_results(std::list<std::list<int> > *from, int data, std::list<std::list<int> > *to)$/;"	f
 val	src/LRU_Cache.cpp	/^    int val;$/;"	m	struct:_Node	file:
 val	src/MergeKSortedList.cpp	/^    int val;$/;"	m	struct:ListNode	file:
-value	src/LFUCache.cpp	/^        int value;$/;"	m	struct:LFUCache::_Node	file:
+value	src/LFUCache.cpp	/^        int value;$/;"	m	struct:LFUCache::Node	file:
 visited	include/graph/Node.hpp	/^    bool visited;$/;"	m	struct:Node
 weight	src/CircusTower.cpp	/^    int weight;$/;"	m	struct:Person	file:
 word	Dynamic-Programming/allConstruct.py	/^                    word = input("Word bank entry:")$/;"	v
